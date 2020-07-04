@@ -1,0 +1,50 @@
+body {
+  background-color: #111 !important;
+}
+
+
+.header .p_header , .header h1 {
+  text-align: left;
+  color:#fff;
+  font-family: arial;
+  font-weight: bold;
+  font-size:20px;
+  padding: 10px 0;
+}
+
+.header p {
+  padding: 20px 0;
+}
+
+ .enemy h3 {
+  padding:5px 0;
+  color: #fff;
+}
+
+.enemy p {
+  padding:10px 0;
+}
+
+ img {
+  width: 100px;
+  height: 80px;
+}
+
+.interface div h3 , p{
+  color:#fff;
+  font-family: arial;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.interface div h3 {
+  padding-top: 20px;
+}
+
+.interface div p {
+  padding-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+}

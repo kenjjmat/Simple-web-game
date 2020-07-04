@@ -15,7 +15,7 @@ let GameManager = {
    case "Mage":
      player = new Player(classType , 80 , 40 , 50 , 200 , 50 );
      break;
-   case "Hunter"
+   case "Hunter":
      player = new Player(classType , 200 , 50 , 100 , 200 , 150 );
      break;
 }
@@ -24,6 +24,9 @@ let  getInterface = document.querySelector(".interface");
 // this is now using javascript to set the elements in the websites
 getInterface.innerHTML = '<img src = "'+ classType +'.jpg" class = "img-avatar"><div><h3>' + classType.toLowerCase() +'<h3><p>Speed :'+player.speed+'</p><p>Mana :'+player.mana+'</p><p>Strength :'+player.strength+'</p><p>Agility :'+player.agility+'</p><p class = "health-player">Health :'+player.health+'</p></div> ';
 },
+
+// this is the setPreFight function
+
 setPreFight: function(){
 // this code is get elements
 let getHeader = document.querySelector(".header");
@@ -35,7 +38,10 @@ getActions.innerHTML = '<a href ="#" class= "btn-prefight" onclick="GameManager.
 // using css to set elements visibility
 getArena.style.visibility = "visible";
 },
-  setFight: function(){
+
+// this is the setFight function
+
+setFight: function(){
     getHeader = document.querySelector(".header");
     getActions = document.querySelector(".actions");
     getEnemy = document.querySelector(".enemy");

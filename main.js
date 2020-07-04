@@ -51,6 +51,7 @@ setFight: function(){
   let enemy01 = new Enemy("Troll", 200, 80 , 150 , 80, 150);
   // creating a random number in javascript
   let chooseRandomEnemy = Math.floor(Math.random() * Math.floor(2));
+  console.log(chooseRandomEnemy);
   switch (chooseRandomEnemy) {
     case 0:
       enemy = enemy00;

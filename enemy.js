@@ -3,7 +3,7 @@
 let enemy;
 
 // blueprint for the enemy
-function Enemy(enemyType, health, mana , strength, agility, Speed ){
+function Enemy(enemyType, health, mana , strength, agility, speed ){
   this.enemyType = enemyType;
   this.health = health;
   this.mana = mana;

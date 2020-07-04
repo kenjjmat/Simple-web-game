@@ -54,8 +54,10 @@ setFight: function(){
     getEnemy = document.querySelector(".enemy");
 
   // create enemy !
-  let enemy00 = new Enemy("Goblin", 100, 50 , 50 , 100, 100);
-  let enemy01 = new Enemy("Troll", 200, 80 , 150 , 80, 150);
+  let enemy00_speed = Math.floor(Math.random()* Math.floor(500));
+  let enemy01_speed = Math.floor(Math.random() * Math.floor(500));
+  let enemy00 = new Enemy("Goblin", 100, 50 , 50 , 100,enemy00_speed );
+  let enemy01 = new Enemy("Troll", 200, 80 , 150 , 80, enemy01_speed);
   // creating a random number in javascript
   let chooseRandomEnemy = Math.floor(Math.random() * Math.floor(2));
   switch (chooseRandomEnemy) {

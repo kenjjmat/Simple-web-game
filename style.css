@@ -50,6 +50,10 @@ h1 {
   visibility: hidden;
 }
 
+:hover {
+  color: red;
+}
+
 .header_attack {
   color: #111 !important;
 }

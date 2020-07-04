@@ -7,16 +7,21 @@ let GameManager = {
   resetPlayer: function(classType){
  switch (classType) {
    case "Warrior":
-     player = new Player(classType , 200 , 20 , 200 , 100 , 50 );
+
+   let warrior_speed = Math.floor(Math.random() * Math.floor(500));
+     player = new Player(classType , 200 , 20 , 200 , 100 , warrior_speed );
      break;
    case "Rogue":
-     player = new Player(classType , 100 , 30 , 100 , 150 , 200 );
+   let rogue_speed = Math.floor(Math.random() * Math.floor(500));
+     player = new Player(classType , 100 , 30 , 100 , 150 , rogue_speed );
      break;
    case "Mage":
-     player = new Player(classType , 80 , 40 , 50 , 200 , 50 );
+   let mage_speed = Math.floor(Math.random() * Math.floor(500));
+     player = new Player(classType , 80 , 40 , 50 , 200 , mage_speed );
      break;
    case "Hunter":
-     player = new Player(classType , 200 , 50 , 100 , 200 , 150 );
+   let hunter_speed = Math.floor(Math.random() * Math.floor(500));
+     player = new Player(classType , 200 , 50 , 100 , 200 , hunter_speed );
      break;
 }
 // this code is to get elements from the website/document
@@ -38,7 +43,6 @@ getHeader.innerHTML = '<p class= "p-header">Task: Find an enemy!</p>';
 getActions.innerHTML = '<a href ="#" class= "btn-prefight" onclick="GameManager.setFight()">Search for enemy</a>';
 // using css to set elements visibility
 
-getEnemy.style.visibility = "visible";
 },
 
 // this is the setFight function
@@ -63,6 +67,7 @@ setFight: function(){
     break;
 
   }
+  getEnemy.style.visibility = "visible";
   getHeader.innerHTML = '<p class = "header_attack">Task: Choose your move </p>';
   getActions.innerHTML = '<a href ="#" class= "btn-prefight" onclick="PlayerMoves.calcAttack()">Attack</a>';
   alert("Enemy Have been found>>> Now Press Attack until either of the has been defeated ");

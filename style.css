@@ -47,11 +47,28 @@ h1 {
   padding-top: 10px;
   border : 1px solid #111;
   box-shadow: 10px 10px 10px 10px rgba(0, 0, 0,0.5);
+  visibility: hidden;
 }
 
 .header_attack {
   color: #111 !important;
 }
+
+.actions {
+  margin-top: : 20px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+
+.actions a {
+  color: red !important;
+  font-size: 20px;
+  weight: 900px;
+  font-style: oblique;
+  font-weight: 900;
+
+}
+
 .header .p_header , .header h1 {
   text-align: center
   color:#111;

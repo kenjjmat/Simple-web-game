@@ -9,5 +9,5 @@ function Enemy(enemyType, health, mana , strength, agility, speed ){
   this.mana = mana;
   this.strength = strength;
   this.agility = agility;
-  this.Speed = speed;
+  this.speed = speed;
 }

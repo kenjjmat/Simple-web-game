@@ -15,7 +15,7 @@ let GameManager = {
    case "Mage":
      player = new Player(classType , 80 , 40 , 50 , 200 , 50 );
      break;
-   case "Hunter":
+   case "Hunter"
      player = new Player(classType , 200 , 50 , 100 , 200 , 150 );
      break;
 }
